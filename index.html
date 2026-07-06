@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link data-mgx-overview="icon" rel="icon" href="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+    <title data-mgx-overview="title">Our Love Story ❤️</title>
+    <link rel="stylesheet" href="./style.css">
+    <meta data-mgx-overview="description" name="description" content="A luxury digital love letter - beautiful, emotional, elegant, interactive, and memorable." />
+    <meta data-mgx-overview="og:title" property="og:title" content="Our Love Story ❤️" />
+    <meta data-mgx-overview="og:description" property="og:description" content="A luxury digital love letter - beautiful, emotional, elegant, interactive, and memorable." />
+    <meta data-mgx-overview="og:image" property="og:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+    <meta data-mgx-overview="twitter:title" name="twitter:title" content="Our Love Story ❤️" />
+    <meta data-mgx-overview="twitter:description" name="twitter:description" content="A luxury digital love letter - beautiful, emotional, elegant, interactive, and memorable." />
+    <meta data-mgx-overview="twitter:image" name="twitter:image" content="https://public-frontend-1300249583.cos.ap-nanjing.myqcloud.com/commonfile/DefaultAppLogo.png" />
+</head>
+<body class="main-page">
+    <canvas id="starCanvas"></canvas>
+    <div class="floating-hearts-bg" id="floatingHearts"></div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav" id="navbar">
+        <div class="nav-brand">
+            <span class="nav-heart">❤️</span>
+            <span class="nav-title">Our Story</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#story" class="nav-link">Our Story</a></li>
+            <li><a href="#timeline" class="nav-link">Timeline</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#letters" class="nav-link">Love Letters</a></li>
+            <li><a href="#countdown" class="nav-link">Countdown</a></li>
+            <li><a href="#music" class="nav-link">Music</a></li>
+            <li><a href="#surprise" class="nav-link">Surprise</a></li>
+            <li><a href="#" class="nav-link logout-link" id="logoutBtn">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">Our Story <span class="heart-pulse">❤️</span></h1>
+            <p class="hero-subtitle">Distance may separate us, but every heartbeat brings us closer together.</p>
+            <a href="#story" class="hero-btn">
+                <span>Begin Our Journey</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="section story-section" id="story">
+        <div class="section-header">
+            <h2 class="section-title">Our Beautiful Story</h2>
+            <p class="section-subtitle">Every chapter written with love</p>
+        </div>
+        <div class="story-grid">
+            <div class="story-card animate-on-scroll">
+                <div class="card-icon">💫</div>
+                <h3>How We Met</h3>
+                <p>It was as if the universe conspired to bring us together. Among millions of souls, ours found each other — a beautiful accident that became the best thing that ever happened to me.</p>
+            </div>
+            <div class="story-card animate-on-scroll">
+                <div class="card-icon">💬</div>
+                <h3>Our First Conversation</h3>
+                <p>That first message changed everything. Words flowed like poetry between us, and I knew from that very first exchange that you were someone extraordinary, someone my heart had been waiting for.</p>
+            </div>
+            <div class="story-card animate-on-scroll">
+                <div class="card-icon">😂</div>
+                <h3>Our First Laugh</h3>
+                <p>Your laughter is my favorite melody. The first time we laughed together, I felt a warmth spread through my entire being — a feeling I never want to live without.</p>
+            </div>
+            <div class="story-card animate-on-scroll">
+                <div class="card-icon">✨</div>
+                <h3>Favorite Memories</h3>
+                <p>Every moment with you becomes a treasure. Late-night conversations, shared dreams, comfortable silences — each memory is a precious gem in the crown of our love story.</p>
+            </div>
+            <div class="story-card animate-on-scroll">
+                <div class="card-icon">💝</div>
+                <h3>Things I Love About You</h3>
+                <p>Your kindness, your strength, the way you make ordinary moments feel magical. Your voice that calms my storms, your smile that lights up my darkest days. Everything about you is perfect to me.</p>
+            </div>
+            <div class="story-card animate-on-scroll">
+                <div class="card-icon">🌟</div>
+                <h3>Dreams for Our Future</h3>
+                <p>I dream of mornings waking up beside you, of building a home filled with laughter, of growing old together. Our future is a canvas, and I want to paint every beautiful moment with you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="section timeline-section" id="timeline">
+        <div class="section-header">
+            <h2 class="section-title">Our Journey Together</h2>
+            <p class="section-subtitle">Milestones of our love</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-item animate-on-scroll" data-side="left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">The Beginning</span>
+                    <h3>The Day We Met</h3>
+                    <p>The universe aligned perfectly, bringing two hearts together in the most beautiful way.</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll" data-side="right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">First Spark</span>
+                    <h3>First Message</h3>
+                    <p>A simple "hello" that would change both our lives forever. The beginning of something magical.</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll" data-side="left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Connection</span>
+                    <h3>First Call</h3>
+                    <p>Hearing your voice for the first time made my heart skip a beat. Hours felt like minutes.</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll" data-side="right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Memories</span>
+                    <h3>First Photo Together</h3>
+                    <p>Capturing our happiness in a single frame — a moment frozen in time that I treasure dearly.</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll" data-side="left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Longing</span>
+                    <h3>First "I Miss You"</h3>
+                    <p>Three words that carry the weight of a thousand emotions. Distance made our hearts grow fonder.</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll" data-side="right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Cherished</span>
+                    <h3>Favorite Memory</h3>
+                    <p>That one perfect moment when everything felt right — when I knew without doubt that you are my forever.</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll" data-side="left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Present</span>
+                    <h3>Today</h3>
+                    <p>Every day with you is a gift. Our love continues to grow stronger, deeper, and more beautiful.</p>
+                </div>
+            </div>
+            <div class="timeline-item animate-on-scroll" data-side="right">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <span class="timeline-date">Forever</span>
+                    <h3>Our Future Wedding 💍</h3>
+                    <p>The day I get to call you mine forever — my greatest dream, my most beautiful future.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+        <div class="section-header">
+            <h2 class="section-title">Our Gallery</h2>
+            <p class="section-subtitle">Moments captured in time</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item animate-on-scroll">
+                <div class="gallery-placeholder">
+                    <span>📷</span>
+                    <p>Our Photo 1</p>
+                </div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">A beautiful moment together</p>
+                    <button class="gallery-heart" aria-label="Favorite">❤️</button>
+                </div>
+            </div>
+            <div class="gallery-item gallery-tall animate-on-scroll">
+                <div class="gallery-placeholder">
+                    <span>📷</span>
+                    <p>Our Photo 2</p>
+                </div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Forever in my heart</p>
+                    <button class="gallery-heart" aria-label="Favorite">❤️</button>
+                </div>
+            </div>
+            <div class="gallery-item animate-on-scroll">
+                <div class="gallery-placeholder">
+                    <span>📷</span>
+                    <p>Our Photo 3</p>
+                </div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Smiles that light up my world</p>
+                    <button class="gallery-heart" aria-label="Favorite">❤️</button>
+                </div>
+            </div>
+            <div class="gallery-item animate-on-scroll">
+                <div class="gallery-placeholder">
+                    <span>📷</span>
+                    <p>Our Photo 4</p>
+                </div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">My favorite person</p>
+                    <button class="gallery-heart" aria-label="Favorite">❤️</button>
+                </div>
+            </div>
+            <div class="gallery-item gallery-wide animate-on-scroll">
+                <div class="gallery-placeholder">
+                    <span>📷</span>
+                    <p>Our Photo 5</p>
+                </div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Adventures together</p>
+                    <button class="gallery-heart" aria-label="Favorite">❤️</button>
+                </div>
+            </div>
+            <div class="gallery-item animate-on-scroll">
+                <div class="gallery-placeholder">
+                    <span>📷</span>
+                    <p>Our Photo 6</p>
+                </div>
+                <div class="gallery-overlay">
+                    <p class="gallery-caption">Pure happiness</p>
+                    <button class="gallery-heart" aria-label="Favorite">❤️</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+        <div class="lightbox-content" id="lightboxContent"></div>
+    </div>
+
+    <!-- Love Letters Section -->
+    <section class="section letters-section" id="letters">
+        <div class="section-header">
+            <h2 class="section-title">Love Letters</h2>
+            <p class="section-subtitle">Words from my heart to yours</p>
+        </div>
+        <div class="letters-grid">
+            <div class="letter-card animate-on-scroll">
+                <div class="letter-decoration">💌</div>
+                <h3 class="letter-title">My Dearest Love</h3>
+                <div class="letter-body">
+                    <p>Every morning I wake up grateful that you exist in this world. You have transformed my life in ways I never thought possible. Your love is the anchor that keeps me grounded and the wings that help me soar. I want you to know that no matter what challenges we face, my love for you only grows stronger with each passing day. You are my today and all of my tomorrows.</p>
+                </div>
+                <div class="letter-hearts">❤️ ❤️ ❤️</div>
+            </div>
+            <div class="letter-card animate-on-scroll">
+                <div class="letter-decoration">💌</div>
+                <h3 class="letter-title">To My Everything</h3>
+                <div class="letter-body">
+                    <p>I want to thank you for being you — for your patience, your kindness, and your unwavering support. You believe in me even when I doubt myself. You lift me up when the world tries to bring me down. In you, I have found not just a partner, but a best friend, a confidant, and a soulmate. Thank you for choosing me, for loving me, and for making every day brighter.</p>
+                </div>
+                <div class="letter-hearts">❤️ ❤️ ❤️</div>
+            </div>
+            <div class="letter-card animate-on-scroll">
+                <div class="letter-decoration">💌</div>
+                <h3 class="letter-title">A Promise</h3>
+                <div class="letter-body">
+                    <p>I promise to love you through every season of life. Through the sunny days and the storms, through laughter and tears, through distance and closeness. I promise to be your safe place, your biggest cheerleader, and your forever home. Our love story is my favorite story, and I cannot wait to write every remaining chapter with you by my side.</p>
+                </div>
+                <div class="letter-hearts">❤️ ❤️ ❤️</div>
+            </div>
+            <div class="letter-card animate-on-scroll">
+                <div class="letter-decoration">💌</div>
+                <h3 class="letter-title">Looking Forward</h3>
+                <div class="letter-body">
+                    <p>I am so excited for our future. I dream of lazy Sunday mornings with you, of traveling the world hand in hand, of building a life filled with love and adventure. Every plan I make has you in it. Every dream I dream features your smile. You are not just part of my future — you ARE my future. And I wouldn't have it any other way.</p>
+                </div>
+                <div class="letter-hearts">❤️ ❤️ ❤️</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section -->
+    <section class="section countdown-section" id="countdown">
+        <div class="section-header">
+            <h2 class="section-title">Counting Down To Us</h2>
+            <p class="section-subtitle">Every second brings us closer</p>
+        </div>
+        <div class="countdown-container">
+            <div class="countdown-card">
+                <div class="countdown-display">
+                    <div class="countdown-unit">
+                        <span class="countdown-number" id="countDays">00</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span class="countdown-number" id="countHours">00</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span class="countdown-number" id="countMinutes">00</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-separator">:</div>
+                    <div class="countdown-unit">
+                        <span class="countdown-number" id="countSeconds">00</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                <p class="countdown-message" id="countdownMessage">Until our next special moment together ❤️</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Music Section -->
+    <section class="section music-section" id="music">
+        <div class="section-header">
+            <h2 class="section-title">Our Playlist</h2>
+            <p class="section-subtitle">Songs that remind me of you</p>
+        </div>
+        <div class="music-player">
+            <div class="player-artwork">
+                <div class="artwork-placeholder">
+                    <span>🎵</span>
+                </div>
+                <div class="vinyl-disc" id="vinylDisc"></div>
+            </div>
+            <div class="player-info">
+                <h3 class="song-title" id="songTitle">Our Love Song</h3>
+                <p class="song-artist" id="songArtist">For You</p>
+            </div>
+            <div class="player-progress">
+                <div class="progress-bar" id="progressBar">
+                    <div class="progress-fill" id="progressFill"></div>
+                    <div class="progress-thumb" id="progressThumb"></div>
+                </div>
+                <div class="progress-time">
+                    <span id="currentTime">0:00</span>
+                    <span id="totalTime">0:00</span>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button class="control-btn" id="shuffleBtn" aria-label="Shuffle">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/>
+                        <polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/>
+                        <line x1="4" y1="4" x2="9" y2="9"/>
+                    </svg>
+                </button>
+                <button class="control-btn" id="prevBtn" aria-label="Previous">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="19 20 9 12 19 4 19 20"/><line x1="5" y1="19" x2="5" y2="5"/>
+                    </svg>
+                </button>
+                <button class="control-btn play-btn" id="playBtn" aria-label="Play">
+                    <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <polygon points="5 3 19 12 5 21 5 3"/>
+                    </svg>
+                    <svg class="pause-icon hidden" viewBox="0 0 24 24" fill="currentColor">
+                        <rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/>
+                    </svg>
+                </button>
+                <button class="control-btn" id="nextBtn" aria-label="Next">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 4 15 12 5 20 5 4"/><line x1="19" y1="5" x2="19" y2="19"/>
+                    </svg>
+                </button>
+                <button class="control-btn" id="loopBtn" aria-label="Loop">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+                        <polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="player-volume">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="volume-icon">
+                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+                <div class="volume-bar" id="volumeBar">
+                    <div class="volume-fill" id="volumeFill"></div>
+                    <div class="volume-thumb" id="volumeThumb"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surprise Section -->
+    <section class="section surprise-section" id="surprise">
+        <div class="section-header">
+            <h2 class="section-title">A Special Surprise</h2>
+            <p class="section-subtitle">Something just for you</p>
+        </div>
+        <div class="surprise-container">
+            <button class="surprise-btn" id="surpriseBtn">
+                <span class="surprise-icon">🎁</span>
+                <span class="surprise-text">Open My Gift ❤️</span>
+            </button>
+        </div>
+        <div class="surprise-overlay" id="surpriseOverlay">
+            <div class="surprise-popup">
+                <button class="surprise-close" id="surpriseClose">&times;</button>
+                <div class="surprise-content">
+                    <div class="surprise-hearts-animation" id="surpriseHeartsAnim"></div>
+                    <h2 class="surprise-title">You Are My Everything ❤️</h2>
+                    <p class="surprise-message">My darling, across every mile and every timezone, my heart beats only for you. You are the reason I smile, the reason I dream, and the reason I believe in forever. No distance could ever diminish what we share — because what we have is not measured in miles, but in the depth of our connection, the warmth of our love, and the strength of our bond. You are loved beyond words, beyond distance, beyond time. Always and forever.</p>
+                    <div class="surprise-sparkles">✨💖✨💖✨</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-heart-animation">
+                <span class="footer-heart">❤️</span>
+            </div>
+            <p class="footer-message">No matter the distance between us, our love continues to grow stronger with every passing moment. You are my heart, my soul, my everything, In a world full of temporary things, you are my forever. Thank you for being the most beautiful chapter of my life. I love you more than words could ever express.</p>
+            <p class="footer-signature">Forever Yours ❤️</p>
+        </div>
+    </footer>
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
